@@ -9,10 +9,10 @@ using com.blackfez.NetFezdoku.utilities;
 
 namespace com.blackfez.NetFezdoku.factories
 {
-    class PuzzleGenerator
+    public class PuzzleGenerator
     {
 
-        static Puzzle CreateSolvable()
+        public static Puzzle CreateSolvable()
         {
             var puzzle = new Puzzle();
             var itr = 0;

@@ -21,6 +21,10 @@ namespace com.blackfez.NetFezdoku.entities
 
         public Puzzle()
         {
+            AllBoxes = new List<FezdokuBox>();
+            Blocks = new List<FezdokuGroup>();
+            Columns = new List<FezdokuGroup>();
+            Rows = new List<FezdokuGroup>();
             
             int index = 0;
             while( index < 9 )

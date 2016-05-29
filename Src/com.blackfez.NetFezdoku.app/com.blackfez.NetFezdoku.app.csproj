@@ -77,6 +77,16 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\com.blackfez.NetFezdoku.entities\com.blackfez.NetFezdoku.entities.csproj">
+      <Project>{4571a950-0faf-41a9-bec0-69948b40aafd}</Project>
+      <Name>com.blackfez.NetFezdoku.entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\com.blackfez.NetFezdoku.factories\com.blackfez.NetFezdoku.factories.csproj">
+      <Project>{a494a77b-a8a2-4503-9ce1-be64de0e762a}</Project>
+      <Name>com.blackfez.NetFezdoku.factories</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

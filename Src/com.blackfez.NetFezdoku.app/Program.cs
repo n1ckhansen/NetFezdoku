@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using com.blackfez.NetFezdoku.factories;
+using System;
 
 namespace com.blackfez.NetFezdoku.app
 {
@@ -10,7 +7,8 @@ namespace com.blackfez.NetFezdoku.app
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hi");
+            var pgen = PuzzleGenerator.CreateSolvable();
+            Console.WriteLine(pgen);
         }
     }
 }
