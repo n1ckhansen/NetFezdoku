@@ -8,7 +8,7 @@ namespace com.blackfez.NetFezdoku.entities
 
         public SudokuValue Guessed { get; private set; }
         
-        public Boolean IsGiven { get; private set; }
+        public bool IsGiven { get; private set; }
 
         public int Index { get; private set; }
 
@@ -20,9 +20,14 @@ namespace com.blackfez.NetFezdoku.entities
             Index = index;
         }
 
-        public Boolean IsCorrect()
+        public bool IsCorrect()
         {
             return Assigned.Equals(Guessed);
+        }
+
+        public void SetAssigned( SudokuValue value )
+        {
+            Assigned = value;
         }
 
 

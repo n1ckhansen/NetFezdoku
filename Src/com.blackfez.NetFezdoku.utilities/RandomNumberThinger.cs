@@ -37,7 +37,7 @@ namespace com.blackfez.NetFezdoku.utilities
 
         public int PickAValue( int count )
         {
-            return Rng.Next(1, count);
+            return Rng.Next(0, count);
         } 
     }
 }

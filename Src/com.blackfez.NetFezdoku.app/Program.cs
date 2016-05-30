@@ -7,8 +7,9 @@ namespace com.blackfez.NetFezdoku.app
     {
         static void Main(string[] args)
         {
-            var pgen = PuzzleGenerator.CreateSolvable();
-            Console.WriteLine(pgen);
+            var puzzle = PuzzleGenerator.CreateSolvable();
+            puzzle.PuzzlePrinter();
+
         }
     }
 }

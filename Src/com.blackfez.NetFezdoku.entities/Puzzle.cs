@@ -38,6 +38,7 @@ namespace com.blackfez.NetFezdoku.entities
             while (index < 81)
             {
                 var thisBox = new FezdokuBox(index);
+                AllBoxes.Add(thisBox);
                 var rowSort = index / 9;
                 var columnSort = index % 9;
                 var blockSort = (rowSort / 3)*3 + columnSort / 3;
@@ -63,7 +64,33 @@ namespace com.blackfez.NetFezdoku.entities
         {
             return AllBoxes[id];
         }
+        
+        public void PuzzlePrinter()
+        {
+            foreach (var row in Rows)
+            {
+                row.PrintBoxes();
+            }
+        }
 
+        public List<SudokuValue> GetPossiblesForId( int id )
+        {
+            var returnSet = SudokuValues.GetBaseSetOfPossibles();
+            foreach( var group in GetGroupsForId( id ) )
+            {
+                returnSet.IntersectWith(group.AvailableValues);
+            }
+            return returnSet.ToList();
+        }
+
+        public void SetValueAtId( int id, SudokuValue value )
+        {
+            foreach( var group in GetGroupsForId( id ) )
+            {
+                group.AvailableValues.Remove(value);
+            }
+            GetBoxForId(id).SetAssigned( value );
+        }
 
     }
 }
