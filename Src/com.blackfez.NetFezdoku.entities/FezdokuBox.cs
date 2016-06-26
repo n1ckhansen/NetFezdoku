@@ -12,7 +12,6 @@ namespace com.blackfez.NetFezdoku.entities
 
         public int Index { get; private set; }
 
-
         public FezdokuBox( int index )
         {
             Assigned = SudokuValue.NULL;
@@ -29,8 +28,5 @@ namespace com.blackfez.NetFezdoku.entities
         {
             Assigned = value;
         }
-
-
-
     }
 }
