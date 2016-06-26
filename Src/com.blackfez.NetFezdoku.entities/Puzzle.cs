@@ -92,6 +92,15 @@ namespace com.blackfez.NetFezdoku.entities
             GetBoxForId(id).SetAssigned( value );
         }
 
+        public void ReleaseValueAtId( int id )
+        {
+            foreach( var group in GetGroupsForId(id))
+            {
+                group.AvailableValues.Add(GetBoxForId(id).Assigned);
+            }
+            GetBoxForId(id).SetAssigned(SudokuValue.NULL);
+        }
+
     }
 }
 /*
