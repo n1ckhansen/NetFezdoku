@@ -42,5 +42,14 @@ namespace com.blackfez.NetFezdoku.entities
                 Boxes[pos] = box;
         }
 
+        public void PrintBoxes()
+        {
+            foreach( var box in Boxes )
+            {
+                Console.Write("{0} ", box.Assigned);
+            }
+            Console.WriteLine("");
+        }
+
     }
 }

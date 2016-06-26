@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("com.blackfez.NetFezdoku.utilities")]
+[assembly: AssemblyTitle("com.blackfez.NetFezdoku.app")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("com.blackfez.NetFezdoku.utilities")]
+[assembly: AssemblyCompany("Black Fez Productions")]
+[assembly: AssemblyProduct("com.blackfez.NetFezdoku.app")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("a8d4ef15-e2bf-415c-a0d1-b529d1f4f5cb")]
+[assembly: Guid("ac5fc04e-a7ba-45f3-bc13-a57d9d44d99b")]
 
 // Version information for an assembly consists of the following four values:
 //
