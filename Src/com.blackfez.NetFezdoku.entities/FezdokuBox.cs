@@ -1,5 +1,4 @@
-﻿using System;
-
+﻿
 namespace com.blackfez.NetFezdoku.entities
 {
     public class FezdokuBox
@@ -14,8 +13,8 @@ namespace com.blackfez.NetFezdoku.entities
 
         public FezdokuBox( int index )
         {
-            Assigned = SudokuValue.NULL;
-            Guessed = SudokuValue.NULL;
+            Assigned = SudokuValue.Null;
+            Guessed = SudokuValue.Null;
             Index = index;
         }
 

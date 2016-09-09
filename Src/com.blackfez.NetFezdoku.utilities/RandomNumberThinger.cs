@@ -1,43 +1,37 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace com.blackfez.NetFezdoku.utilities
 {
     public sealed class RandomNumberThinger
     {
-        private static volatile RandomNumberThinger _Instance;
-        private static object syncRoot = new object();
-        private static Random Rng;
+        private static volatile RandomNumberThinger _instance;
+        private static readonly object SyncRoot = new object();
+        private static Random _rng;
 
         private RandomNumberThinger()
         {
-            Rng = new Random();
+            _rng = new Random();
         }
 
         public static RandomNumberThinger Instance
         {
             get
             {
-                if (_Instance == null)
+                if (_instance != null) return _instance;
+                lock( SyncRoot )
                 {
-                    lock( syncRoot )
+                    if( _instance == null )
                     {
-                        if( _Instance == null )
-                        {
-                            _Instance = new RandomNumberThinger();
-                        }
+                        _instance = new RandomNumberThinger();
                     }
                 }
-                return _Instance;
+                return _instance;
             }
         }
 
         public int PickAValue( int count )
         {
-            return Rng.Next(0, count);
+            return _rng.Next(0, count);
         } 
     }
 }

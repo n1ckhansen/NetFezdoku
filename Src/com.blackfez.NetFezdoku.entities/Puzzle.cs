@@ -1,20 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace com.blackfez.NetFezdoku.entities
 {
     public class Puzzle
     {
-        public List<FezdokuBox> AllBoxes { get; private set; }
+        public List<FezdokuBox> AllBoxes { get; }
 
-        private List<FezdokuGroup> Blocks { get; set; }
+        private List<FezdokuGroup> Blocks { get; }
 
-        private List<FezdokuGroup> Columns { get; set; }
+        private List<FezdokuGroup> Columns { get; }
 
-        private List<FezdokuGroup> Rows { get; set; }
+        private List<FezdokuGroup> Rows { get; }
 
         public Puzzle()
         {
@@ -23,7 +20,7 @@ namespace com.blackfez.NetFezdoku.entities
             Columns = new List<FezdokuGroup>();
             Rows = new List<FezdokuGroup>();
             
-            int index = 0;
+            var index = 0;
             while( index < 9 )
             {
                 Blocks.Add(new FezdokuGroup());
@@ -94,7 +91,7 @@ namespace com.blackfez.NetFezdoku.entities
             {
                 group.AvailableValues.Add(GetBoxForId(id).Assigned);
             }
-            GetBoxForId(id).SetAssigned(SudokuValue.NULL);
+            GetBoxForId(id).SetAssigned(SudokuValue.Null);
         }
     }
 }

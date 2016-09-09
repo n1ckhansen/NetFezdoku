@@ -1,13 +1,7 @@
-﻿using com.blackfez.NetFezdoku.factories;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using com.blackfez.NetFezdoku.entities;
+﻿using com.blackfez.NetFezdoku.entities;
 using com.blackfez.NetFezdoku.utilities;
 
-namespace com.blackfez.NetFezdoku.factories
+namespace com.blackfez.NeFezdoku.factories
 {
     public class PuzzleGenerator
     {
@@ -17,7 +11,7 @@ namespace com.blackfez.NetFezdoku.factories
             var itr = 0;
             while( itr < 81 )
             {
-                var boxGroups = puzzle.GetGroupsForId(itr);
+                puzzle.GetGroupsForId(itr);
                 itr++;
             }
             return puzzle;
@@ -28,7 +22,7 @@ namespace com.blackfez.NetFezdoku.factories
             var puzzle = CreateEmptyPuzzle();
             var scratchpad = new PuzzleGeneratorState();
             SetPuzzleBox(puzzle, scratchpad);
-            int i = 0;
+            var i = 0;
             while( i < 35 ) {
                 var index = RandomNumberThinger.Instance.PickAValue( 81 );
                 if (puzzle.AllBoxes[index].IsGiven)
@@ -41,7 +35,7 @@ namespace com.blackfez.NetFezdoku.factories
             return puzzle;
         }
 
-        static private void SetPuzzleBox( Puzzle puzzle, PuzzleGeneratorState scratch )
+        private static void SetPuzzleBox( Puzzle puzzle, PuzzleGeneratorState scratch )
         {
             if (scratch.CurrentIndex == 81)
                 return;

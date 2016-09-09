@@ -1,11 +1,10 @@
-﻿using com.blackfez.NetFezdoku.factories;
-using System;
+﻿using com.blackfez.NeFezdoku.factories;
 
 namespace com.blackfez.NetFezdoku.app
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
             var puzzle = PuzzleGenerator.CreateSolvable();
             puzzle.PuzzlePrinter();
