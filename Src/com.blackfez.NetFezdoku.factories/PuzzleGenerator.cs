@@ -28,6 +28,16 @@ namespace com.blackfez.NetFezdoku.factories
             var puzzle = CreateEmptyPuzzle();
             var scratchpad = new PuzzleGeneratorState();
             SetPuzzleBox(puzzle, scratchpad);
+            int i = 0;
+            while( i < 35 ) {
+                var index = RandomNumberThinger.Instance.PickAValue( 81 );
+                if (puzzle.AllBoxes[index].IsGiven)
+                    continue;
+                var givenBox = puzzle.AllBoxes[index];
+                givenBox.Guessed = givenBox.Assigned;
+                givenBox.IsGiven = true;
+                i++;
+            }
             return puzzle;
         }
 

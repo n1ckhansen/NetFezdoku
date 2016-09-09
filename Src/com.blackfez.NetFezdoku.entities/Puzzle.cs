@@ -8,7 +8,7 @@ namespace com.blackfez.NetFezdoku.entities
 {
     public class Puzzle
     {
-        private List<FezdokuBox> AllBoxes { get; set; }
+        public List<FezdokuBox> AllBoxes { get; private set; }
 
         private List<FezdokuGroup> Blocks { get; set; }
 

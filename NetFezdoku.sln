@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.blackfez.NetFezdoku.app", "Src\com.blackfez.NetFezdoku.app\com.blackfez.NetFezdoku.app.csproj", "{AC5FC04E-A7BA-45F3-BC13-A57D9D44D99B}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.blackfez.NetFezdoku.factories", "Src\com.blackfez.NetFezdoku.factories\com.blackfez.NetFezdoku.factories.csproj", "{A494A77B-A8A2-4503-9CE1-BE64DE0E762A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.blackfez.NetFezdoku.utilities", "Src\com.blackfez.NetFezdoku.utilities\com.blackfez.NetFezdoku.utilities.csproj", "{A8D4EF15-E2BF-415C-A0D1-B529D1F4F5CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.blackfez.NetFezdoku.ui", "Src\com.blackfez.NetFezdoku.ui\com.blackfez.NetFezdoku.ui.csproj", "{B7EBEE7D-39B5-42F0-8DF8-E3DCFA379B6C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{A8D4EF15-E2BF-415C-A0D1-B529D1F4F5CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8D4EF15-E2BF-415C-A0D1-B529D1F4F5CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8D4EF15-E2BF-415C-A0D1-B529D1F4F5CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7EBEE7D-39B5-42F0-8DF8-E3DCFA379B6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7EBEE7D-39B5-42F0-8DF8-E3DCFA379B6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7EBEE7D-39B5-42F0-8DF8-E3DCFA379B6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7EBEE7D-39B5-42F0-8DF8-E3DCFA379B6C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

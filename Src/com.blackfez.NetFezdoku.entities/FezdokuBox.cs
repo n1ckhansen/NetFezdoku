@@ -6,9 +6,9 @@ namespace com.blackfez.NetFezdoku.entities
     {
         public SudokuValue Assigned { get; private set; }
 
-        public SudokuValue Guessed { get; private set; }
+        public SudokuValue Guessed { get; set; }
         
-        public bool IsGiven { get; private set; }
+        public bool IsGiven { get; set; }
 
         public int Index { get; private set; }
 

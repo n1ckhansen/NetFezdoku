@@ -9,7 +9,6 @@ namespace com.blackfez.NetFezdoku.app
         {
             var puzzle = PuzzleGenerator.CreateSolvable();
             puzzle.PuzzlePrinter();
-
         }
     }
 }

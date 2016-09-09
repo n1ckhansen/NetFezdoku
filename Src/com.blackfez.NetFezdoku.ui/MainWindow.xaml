@@ -1,0 +1,161 @@
+﻿<Window x:Class="com.blackfez.NetFezdoku.ui.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:com.blackfez.NetFezdoku.ui"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="35" />
+            <RowDefinition Height="35" />
+            <RowDefinition Height="35" />
+            <RowDefinition Height="35" />
+            <RowDefinition Height="35" />
+            <RowDefinition Height="35" />
+            <RowDefinition Height="35" />
+            <RowDefinition Height="35" />
+            <RowDefinition Height="35" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="35"/>
+            <ColumnDefinition Width="35"/>
+            <ColumnDefinition Width="35"/>
+            <ColumnDefinition Width="35"/>
+            <ColumnDefinition Width="35"/>
+            <ColumnDefinition Width="35"/>
+            <ColumnDefinition Width="35"/>
+            <ColumnDefinition Width="35"/>
+            <ColumnDefinition Width="35"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <!-- ROW 0 -->
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="11" HorizontalContentAlignment="Center" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Background="Aquamarine">The top of the grid</Label>
+
+        <!-- ROW 1 -->
+        <Label Grid.Row="1" Grid.Column="0" HorizontalAlignment="Stretch"></Label>
+        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Boxes[0].Guessed}" />
+        <TextBox Grid.Row="1" Grid.Column="2" Text="{Binding Boxes[1].Guessed}" />
+        <TextBox Grid.Row="1" Grid.Column="3" Text="{Binding Boxes[2].Guessed}" />
+        <TextBox Grid.Row="1" Grid.Column="4" Text="{Binding Boxes[3].Guessed}" />
+        <TextBox Grid.Row="1" Grid.Column="5" Text="{Binding Boxes[4].Guessed}" />
+        <TextBox Grid.Row="1" Grid.Column="6" Text="{Binding Boxes[5].Guessed}" />
+        <TextBox Grid.Row="1" Grid.Column="7" Text="{Binding Boxes[6].Guessed}" />
+        <TextBox Grid.Row="1" Grid.Column="8" Text="{Binding Boxes[7].Guessed}" />
+        <TextBox Grid.Row="1" Grid.Column="9" Text="{Binding Boxes[8].Guessed}" />
+        <Label Grid.Row="1" Grid.Column="10" HorizontalAlignment="Stretch"></Label>
+
+
+        <!-- ROW 2 -->
+        <Label Grid.Row="2" Grid.Column="0" HorizontalAlignment="Stretch"></Label>
+        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Boxes[9].Guessed}" />
+        <TextBox Grid.Row="2" Grid.Column="2" Text="{Binding Boxes[10].Guessed}" />
+        <TextBox Grid.Row="2" Grid.Column="3" Text="{Binding Boxes[11].Guessed}" />
+        <TextBox Grid.Row="2" Grid.Column="4" Text="{Binding Boxes[12].Guessed}" />
+        <TextBox Grid.Row="2" Grid.Column="5" Text="{Binding Boxes[13].Guessed}" />
+        <TextBox Grid.Row="2" Grid.Column="6" Text="{Binding Boxes[14].Guessed}" />
+        <TextBox Grid.Row="2" Grid.Column="7" Text="{Binding Boxes[15].Guessed}" />
+        <TextBox Grid.Row="2" Grid.Column="8" Text="{Binding Boxes[16].Guessed}" />
+        <TextBox Grid.Row="2" Grid.Column="9" Text="{Binding Boxes[17].Guessed}" />
+        <Label Grid.Row="2" Grid.Column="10" HorizontalAlignment="Stretch"></Label>
+
+        <!-- ROW 3 -->
+        <Label Grid.Row="3" Grid.Column="0" HorizontalAlignment="Stretch"></Label>
+        <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding Boxes[18].Guessed}" />
+        <TextBox Grid.Row="3" Grid.Column="2" Text="{Binding Boxes[19].Guessed}" />
+        <TextBox Grid.Row="3" Grid.Column="3" Text="{Binding Boxes[20].Guessed}" />
+        <TextBox Grid.Row="3" Grid.Column="4" Text="{Binding Boxes[21].Guessed}" />
+        <TextBox Grid.Row="3" Grid.Column="5" Text="{Binding Boxes[22].Guessed}" />
+        <TextBox Grid.Row="3" Grid.Column="6" Text="{Binding Boxes[23].Guessed}" />
+        <TextBox Grid.Row="3" Grid.Column="7" Text="{Binding Boxes[24].Guessed}" />
+        <TextBox Grid.Row="3" Grid.Column="8" Text="{Binding Boxes[25].Guessed}" />
+        <TextBox Grid.Row="3" Grid.Column="9" Text="{Binding Boxes[26].Guessed}" />
+        <Label Grid.Row="3" Grid.Column="10" HorizontalAlignment="Stretch"></Label>
+
+        <!-- ROW 4 -->
+        <Label Grid.Row="4" Grid.Column="0" HorizontalAlignment="Stretch"></Label>
+        <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding Boxes[27].Guessed}" />
+        <TextBox Grid.Row="4" Grid.Column="2" Text="{Binding Boxes[28].Guessed}" />
+        <TextBox Grid.Row="4" Grid.Column="3" Text="{Binding Boxes[29].Guessed}" />
+        <TextBox Grid.Row="4" Grid.Column="4" Text="{Binding Boxes[30].Guessed}" />
+        <TextBox Grid.Row="4" Grid.Column="5" Text="{Binding Boxes[31].Guessed}" />
+        <TextBox Grid.Row="4" Grid.Column="6" Text="{Binding Boxes[32].Guessed}" />
+        <TextBox Grid.Row="4" Grid.Column="7" Text="{Binding Boxes[33].Guessed}" />
+        <TextBox Grid.Row="4" Grid.Column="8" Text="{Binding Boxes[34].Guessed}" />
+        <TextBox Grid.Row="4" Grid.Column="9" Text="{Binding Boxes[35].Guessed}" />
+        <Label Grid.Row="4" Grid.Column="10" HorizontalAlignment="Stretch"></Label>
+
+        <!-- ROW 5 -->
+        <Label Grid.Row="5" Grid.Column="0" HorizontalAlignment="Stretch"></Label>
+        <TextBox Grid.Row="5" Grid.Column="1" Text="{Binding Boxes[36].Guessed}" />
+        <TextBox Grid.Row="5" Grid.Column="2" Text="{Binding Boxes[37].Guessed}" />
+        <TextBox Grid.Row="5" Grid.Column="3" Text="{Binding Boxes[38].Guessed}" />
+        <TextBox Grid.Row="5" Grid.Column="4" Text="{Binding Boxes[39].Guessed}" />
+        <TextBox Grid.Row="5" Grid.Column="5" Text="{Binding Boxes[40].Guessed}" />
+        <TextBox Grid.Row="5" Grid.Column="6" Text="{Binding Boxes[41].Guessed}" />
+        <TextBox Grid.Row="5" Grid.Column="7" Text="{Binding Boxes[42].Guessed}" />
+        <TextBox Grid.Row="5" Grid.Column="8" Text="{Binding Boxes[43].Guessed}" />
+        <TextBox Grid.Row="5" Grid.Column="9" Text="{Binding Boxes[44].Guessed}" />
+        <Label Grid.Row="5" Grid.Column="10" HorizontalAlignment="Stretch"></Label>
+
+        <!-- ROW 6 -->
+        <Label Grid.Row="6" Grid.Column="0" HorizontalAlignment="Stretch"></Label>
+        <TextBox Grid.Row="6" Grid.Column="1" Text="{Binding Boxes[45].Guessed}" />
+        <TextBox Grid.Row="6" Grid.Column="2" Text="{Binding Boxes[46].Guessed}" />
+        <TextBox Grid.Row="6" Grid.Column="3" Text="{Binding Boxes[47].Guessed}" />
+        <TextBox Grid.Row="6" Grid.Column="4" Text="{Binding Boxes[48].Guessed}" />
+        <TextBox Grid.Row="6" Grid.Column="5" Text="{Binding Boxes[49].Guessed}" />
+        <TextBox Grid.Row="6" Grid.Column="6" Text="{Binding Boxes[50].Guessed}" />
+        <TextBox Grid.Row="6" Grid.Column="7" Text="{Binding Boxes[51].Guessed}" />
+        <TextBox Grid.Row="6" Grid.Column="8" Text="{Binding Boxes[52].Guessed}" />
+        <TextBox Grid.Row="6" Grid.Column="9" Text="{Binding Boxes[53].Guessed}" />
+        <Label Grid.Row="6" Grid.Column="10" HorizontalAlignment="Stretch"></Label>
+
+        <!-- ROW 7 -->
+        <Label Grid.Row="7" Grid.Column="0" HorizontalAlignment="Stretch"></Label>
+        <TextBox Grid.Row="7" Grid.Column="1" Text="{Binding Boxes[54].Guessed}" />
+        <TextBox Grid.Row="7" Grid.Column="2" Text="{Binding Boxes[55].Guessed}" />
+        <TextBox Grid.Row="7" Grid.Column="3" Text="{Binding Boxes[56].Guessed}" />
+        <TextBox Grid.Row="7" Grid.Column="4" Text="{Binding Boxes[57].Guessed}" />
+        <TextBox Grid.Row="7" Grid.Column="5" Text="{Binding Boxes[58].Guessed}" />
+        <TextBox Grid.Row="7" Grid.Column="6" Text="{Binding Boxes[59].Guessed}" />
+        <TextBox Grid.Row="7" Grid.Column="7" Text="{Binding Boxes[60].Guessed}" />
+        <TextBox Grid.Row="7" Grid.Column="8" Text="{Binding Boxes[61].Guessed}" />
+        <TextBox Grid.Row="7" Grid.Column="9" Text="{Binding Boxes[62].Guessed}" />
+        <Label Grid.Row="7" Grid.Column="10" HorizontalAlignment="Stretch"></Label>
+
+        <!-- ROW 8 -->
+        <Label Grid.Row="8" Grid.Column="0" HorizontalAlignment="Stretch"></Label>
+        <TextBox Grid.Row="8" Grid.Column="1" Text="{Binding Boxes[63].Guessed}" />
+        <TextBox Grid.Row="8" Grid.Column="2" Text="{Binding Boxes[64].Guessed}" />
+        <TextBox Grid.Row="8" Grid.Column="3" Text="{Binding Boxes[65].Guessed}" />
+        <TextBox Grid.Row="8" Grid.Column="4" Text="{Binding Boxes[66].Guessed}" />
+        <TextBox Grid.Row="8" Grid.Column="5" Text="{Binding Boxes[67].Guessed}" />
+        <TextBox Grid.Row="8" Grid.Column="6" Text="{Binding Boxes[68].Guessed}" />
+        <TextBox Grid.Row="8" Grid.Column="7" Text="{Binding Boxes[69].Guessed}" />
+        <TextBox Grid.Row="8" Grid.Column="8" Text="{Binding Boxes[70].Guessed}" />
+        <TextBox Grid.Row="8" Grid.Column="9" Text="{Binding Boxes[71].Guessed}" />
+        <Label Grid.Row="8" Grid.Column="10" HorizontalAlignment="Stretch"></Label>
+
+        <!-- ROW 9 -->
+        <Label Grid.Row="9" Grid.Column="0" HorizontalAlignment="Stretch"></Label>
+        <TextBox Grid.Row="9" Grid.Column="1" Text="{Binding Boxes[72].Guessed}" />
+        <TextBox Grid.Row="9" Grid.Column="2" Text="{Binding Boxes[73].Guessed}" />
+        <TextBox Grid.Row="9" Grid.Column="3" Text="{Binding Boxes[74].Guessed}" />
+        <TextBox Grid.Row="9" Grid.Column="4" Text="{Binding Boxes[75].Guessed}" />
+        <TextBox Grid.Row="9" Grid.Column="5" Text="{Binding Boxes[76].Guessed}" />
+        <TextBox Grid.Row="9" Grid.Column="6" Text="{Binding Boxes[77].Guessed}" />
+        <TextBox Grid.Row="9" Grid.Column="7" Text="{Binding Boxes[78].Guessed}" />
+        <TextBox Grid.Row="9" Grid.Column="8" Text="{Binding Boxes[79].Guessed}" />
+        <TextBox Grid.Row="9" Grid.Column="9" Text="{Binding Boxes[80].Guessed}" />
+        <Label Grid.Row="9" Grid.Column="10" HorizontalAlignment="Stretch"></Label>
+
+        <!-- ROW 10 -->
+        <Label Grid.Row="10" Grid.Column="0" Grid.ColumnSpan="11" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Bisque">The bottom of the grid</Label>
+
+    </Grid>
+</Window>
